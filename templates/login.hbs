@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        <div>
+            <input type="text" name="name" placeholder="Name">
+            <div class="form-group">
+                <label for="topic">Topics to subscribe:</label>
+                <select name="topic" multiple>
+                    <option value="dance">Dance</option>
+                    <option value="travel">Travel</option>
+                    <option value="food">Food</option>
+                    <option value="music">Music</option>
+                </select>
+            </div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Topic</h2>
+
+     <form action="/posts" method="post">
+        <div>
+            <input type="text" name="postTitle" placeholder="Post title">
+             <input type="text" name="postDescription" placeholder="Post description">
+            <div class="form-group">
+                <label for="topic">Add Posts:</label>
+                <select name="topic" multiple>
+                    <option value="dance">Dance</option>
+                    <option value="travel">Travel</option>
+                    <option value="food">Food</option>
+                    <option value="music">Music</option>
+                </select>
+            </div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

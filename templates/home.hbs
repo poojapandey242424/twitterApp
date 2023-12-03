@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome, {{userName}}</h1>
+    <h2>Your Topics:</h2>
+    <ul>
+        {{#each topics}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <h2>Posts by Topic:</h2>
+    {{#each posts}}
+        <div>
+            <h3>Topic: {{this.topic}}</h3>
+            <ul>
+                    <li>{{this.postTitle}}</li>
+                                        <li>{{this.postDescription}}</li>
+            </ul>
+        </div>
+    {{/each}}
+    <a href="/posts">Create Post</a>
+</body>
+</html>
