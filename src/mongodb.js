@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 mongoose
-  .connect("mongodb://localhost:27017/LoginSignUpTutorial") //to connect node to mongo db database
+  .connect(process.env.MONGO_URI) //to connect node to mongo db database
   .then(() => {
     console.log("mongo connected");
   })
